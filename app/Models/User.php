@@ -32,7 +32,6 @@ class User extends Authenticatable
         'phone',
         'status',
         'online',
-        'membership_id',
         'email',
         'password',
     ];
@@ -69,15 +68,5 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
-    }
-
-    public function membership()
-    {
-        return $this->belongsTo(Membership::class);
-    }
-
-    public function scrapings()
-    {
-        return $this->hasMany(Scraping::class);
     }
 }

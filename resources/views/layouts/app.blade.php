@@ -58,10 +58,10 @@
         @if (Auth::user() && $route && in_array('auth:sanctum', $route->gatherMiddleware()))
             <div class="flex h-[100dvh] overflow-hidden relative">
 
-                <div class="bg-gradient-to-bl to-blue-900 from-sky-600 w-full absolute top-0 py-36 rounded-b-[20%]"></div>
+                <div class="bg-gradient-to-bl to-orange-700 from-yellow-500 w-full absolute top-0 py-36 rounded-b-[20%]"></div>
 
-                <div class="bg-gradient-to-bl to-blue-900 from-sky-600 absolute bottom-0 p-16 rounded-tr-full"></div>
-                <div class="bg-gradient-to-bl to-blue-900 from-sky-600 absolute bottom-0 right-0 p-24 rounded-tl-full"></div>
+                <div class="bg-gradient-to-bl to-orange-700 from-yellow-500 absolute bottom-0 p-16 rounded-tr-full"></div>
+                <div class="bg-gradient-to-bl to-orange-700 from-yellow-500 absolute bottom-0 right-0 p-24 rounded-tl-full"></div>
 
                 <x-app.sidebar :variant="$attributes['sidebarVariant']" />
 

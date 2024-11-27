@@ -1,7 +1,7 @@
 @props(['active'])
 
 @php
-    $classes = $active ?? false ? '!text-blue-500 font-bold' : '';
+    $classes = $active ?? false ? '!text-yellow-500 font-bold' : '';
 @endphp
 
 <li class="mb-1 last:mb-0">

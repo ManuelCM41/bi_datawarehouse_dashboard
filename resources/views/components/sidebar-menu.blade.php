@@ -9,7 +9,7 @@
     <div class="flex items-center justify-center sidebar-expanded:justify-between">
         <div class="flex items-center truncate">
             <span
-                class="@if ($active) {{ 'text-blue-600' }}@else{{ 'text-gray-400 dark:text-gray-500 group-hover:text-gray-800 group-hover:dark:text-gray-100 duration-500' }} @endif">
+                class="@if ($active) {{ 'text-yellow-600' }}@else{{ 'text-gray-400 dark:text-gray-500 group-hover:text-gray-800 group-hover:dark:text-gray-100 duration-500' }} @endif">
                 <i class="{{ $classIcon }} fa-fw"></i>
             </span>
 

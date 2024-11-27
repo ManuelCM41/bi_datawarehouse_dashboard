@@ -1,4 +1,4 @@
-@props(['url' => '#0', 'counter' => 1, 'label' => 'Label', 'color' => 'gray'])
+@props(['url' => '#0', 'counter' => 1, 'label' => 'Label', 'color' => 'gray', 'icon' => ''])
 
 @php
 
@@ -33,7 +33,7 @@
     </div>
     <div class="flex flex-col justify-between items-end">
         <div class="text-white p-4 bg-gradient-to-bl {{ $color }} rounded-lg h-max">
-            <i class="fa-solid fa-users fa-lg fa-fw"></i>
+            <i class="{{ $icon }} fa-lg fa-fw"></i>
         </div>
         <a href="{{ $url }}"
             class="flex items-center gap-2 hover:text-gray-900 hover:font-semibold duration-200">

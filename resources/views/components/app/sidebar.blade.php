@@ -51,7 +51,7 @@
             <!-- Logo -->
             <a class="block" href="{{ route('admin.home') }}">
 
-                <div class="flex gap-4 items-center self-center text-blue-600 text-3xl">
+                <div class="flex gap-4 items-center self-center text-yellow-600 text-3xl">
                     <i class="fa-solid fa-dragon"></i>
                     <div class="flex flex-col lg:hidden lg:sidebar-expanded:!flex">
                         <span class="text-base font-bold"> Bienvenido al</span>
@@ -105,7 +105,7 @@
                                     }
                                 }
                             @endphp
-                            <li class="px-3 py-2 rounded-lg mb-0.5 last:mb-0 bg-[linear-gradient(135deg,var(--tw-gradient-stops))] @if (in_array(request()->route()->getName(), $first_url) || in_array(request()->route()->getName(), $urls) || (isset($menu['url']) && request()->routeIs($menu['url']))) {{ 'from-blue-500/[0.12] dark:from-blue-500/[0.24] to-blue-500/[0.04]' }} @endif"
+                            <li class="px-3 py-2 rounded-lg mb-0.5 last:mb-0 bg-[linear-gradient(135deg,var(--tw-gradient-stops))] @if (in_array(request()->route()->getName(), $first_url) || in_array(request()->route()->getName(), $urls) || (isset($menu['url']) && request()->routeIs($menu['url']))) {{ 'from-yellow-500/[0.12] dark:from-yellow-500/[0.24] to-yellow-500/[0.04]' }} @endif"
                                 x-data="{ open: {{ in_array(request()->route()->getName(), $first_url) || in_array(request()->route()->getName(), $urls)  ? 'true' : 'false' }} }">
                                 @if (isset($menu['submenu']))
                                     <x-sidebar-menu @click="open = ! open; sidebarExpanded = true"
